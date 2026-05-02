@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Achievements</title>
+<link rel="stylesheet" href="achievements.css">
+</head>
+
+<body>
+
+<h1 class="title">My Certificates</h1>
+
+<div class="gallery">
+
+    <!-- CERTIFICATE 1 -->
+    <img src="cert1.jpg" class="cert" onclick="openModal(this)">
+
+    <!-- CERTIFICATE 2 -->
+    <img src="cert2.jpg" class="cert" onclick="openModal(this)">
+
+    <!-- CERTIFICATE 3 -->
+    <img src="cert3.jpg" class="cert" onclick="openModal(this)">
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" onclick="closeModal()">
+    <img id="modal-img">
+</div>
+
+<a href="index.html">
+    <button class="back">⬅ Back</button>
+</a>
+
+<script src="achievements.js"></script>
+
+</body>
+</html>

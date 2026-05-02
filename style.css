@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#0f172a,#020617);
+    color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+}
+.sidebar {
+       
+    overflow-y: auto;       /* enable vertical scroll */
+    position: fixed;        /* keep sidebar fixed */
+
+}
+
+/* PROFILE */
+.profile-img {
+    width: 130px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 0 20px cyan;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+}
+
+.name {
+    text-align: center;
+}
+
+.name span {
+    color: cyan;
+}
+
+/* TYPING */
+.typing {
+    text-align: center;
+    color: #38bdf8;
+}
+
+/* SKILLS */
+.bar {
+    height: 8px;
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: cyan;
+    border-radius: 10px;
+}
+
+/* MAIN */
+.main {
+    margin-left: 320px;
+    padding: 30px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px cyan;
+}
+
+/* TIMELINE */
+.timeline {
+    border-left: 2px solid cyan;
+    padding-left: 20px;
+}
+
+.item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: cyan;
+    border-radius: 50%;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .sidebar{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main{
+        margin-left: 0;
+    }
+}
+
+/*Achivement button*/
+
+/* CENTER BUTTON UNDER TEXT */
+.btn-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* BUTTON STYLE */
+.btn {
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    background: transparent;
+    color: cyan;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0 0 20px cyan;
+    transform: scale(1.05);
+}
+
+/* ===== CUSTOM SCROLLBAR (CHROME, EDGE, SAFARI) ===== */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, cyan, #38bdf8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00ffff, #0ea5e9);
+    box-shadow: 0 0 20px cyan;
+}
+
